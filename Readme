@@ -1,0 +1,29 @@
+---
+title: PISE Extractor
+emoji: 🚂
+colorFrom: blue
+colorTo: gray
+sdk: gradio
+sdk_version: "4.44.0"
+app_file: pise_extractor.py
+pinned: false
+---
+
+# PISE — Extractor de Informes de Inspección de Seguridad Estática
+
+Herramienta para extraer y normalizar datos de inspección ferroviaria 
+desde PDFs Bureau Veritas Argentina.
+
+## Tipos de PISE soportados
+- **PISE-SGBV-030** (Coches Motores DMU — ej: CMF, LBS)
+- **PISE-SGBV-011** (Locomotoras Diesel-Eléctricas — ej: GT22)
+- Otros tipos con estructura similar
+
+## Qué extrae
+Todas las secciones del informe normalizadas en columnas:
+`Vehículo | Sección | Ítem técnico | Descripción | Bogie | Rueda | Lado | Valor esperado | Valor medido | Observación`
+
+## Output
+Excel con dos hojas:
+- **PISE_Datos**: Todos los registros
+- **Solo_X_Fallas**: Solo los ítems con resultado X (falla)
