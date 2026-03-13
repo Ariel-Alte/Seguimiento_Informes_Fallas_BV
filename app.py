@@ -2,6 +2,7 @@
 PISE — Extractor de Informes de Inspección de Seguridad Estática
 Versión: 3.0
 Plataforma: Gradio + Hugging Face Spaces
+Actualizacion del codigo:13/03/2026 - 11:45 hs
 
 Flujo:
   1. Extrae encabezado (vehículo, línea, informe N°, fecha, código PISE)
